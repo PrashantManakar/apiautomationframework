@@ -25,21 +25,13 @@ public class SBDBClosedApproachDataEndpoints {
 	 * {asteroid}  We are passing dynamic value to this API from test 
 	 * {dateMin} exclude data earlier than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date
 	
-	 * {distMax} exclude data later than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date or +D for “D” days after now 
+	 * {distMax} exclude data later than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date or +D for ï¿½Dï¿½ days after now 
 	 * 
 	 */
 	public static final String GET_ASTROID_RESPONSE_BY_FILTERED_DATE = 
-			"/cad.api?";
+			"/cad.api";
 			//+ "des={asteroid}&date-min={dateMin}&date-max={dateMax}&dist-max={distMax}";
 	
-	/** GET_NEO_LUNARS_RESPONSE_BY_FILTERED_DATE
-	 * 
-	 * {distMax} exclude data with an approach distance greater than this (see dist-min)
-	 *  
-	 * {dateMin} exclude data earlier than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date
-	 */
-	public static final String GET_NEO_LUNARS_RESPONSE_BY_FILTERED_DATE =
-			"/cad.api?dist-max={distMax}&date-min={dateMin}&sort=dist";
-
+	
 
 }

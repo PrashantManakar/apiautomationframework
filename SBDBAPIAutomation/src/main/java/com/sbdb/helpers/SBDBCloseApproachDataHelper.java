@@ -105,34 +105,7 @@ public class SBDBCloseApproachDataHelper {
 
 	}
 
-	/**
-	 * 
-	 * This method will hit the get request and return the entire POJO response with Query parameter 
-	 * 
-	 * @param distMax
-	 * @param startDate
-	 * @return SBDBClosedApproachData
-	 */
-	public SBDBClosedApproachData getAllSBDBClosedApproachDataWithQueryParameter(
-			String distMax, String startDate) {
 
-		/*
-		 * Hit GET request by using RestAssured with below end-points
-		 */
-		Response response = RestAssured
-				.given( ).log().all().
-				queryParam("dateMin", startDate).
-				queryParam("distMax", distMax)
-				.contentType(ContentType.JSON)
-				.get(SBDBClosedApproachDataEndpoints.GET_NEO_LUNARS_RESPONSE_BY_FILTERED_DATE)
-				.andReturn( );
-
-		/**
-		 * Convert the entire JSON resonse to POJO objects 
-		 */
-		return convertJSONResponseToPOJOResponse(response);
-
-	}
 
 	/**
 	 * Method to convert Response objects to POJO Objects 
