@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Automation Framework Suite" >	
+
+	  <test name="APIAutomation">
+        <classes>
+            <class name="com.sbdb.apiTest.SBDBClosedApproachDataTestSuite" />
+        </classes>
+    </test>
+
+</suite>
