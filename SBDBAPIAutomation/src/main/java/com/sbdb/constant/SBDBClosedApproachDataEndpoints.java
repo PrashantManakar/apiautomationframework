@@ -29,7 +29,8 @@ public class SBDBClosedApproachDataEndpoints {
 	 * 
 	 */
 	public static final String GET_ASTROID_RESPONSE_BY_FILTERED_DATE = 
-			"/cad.api?des={asteroid}&date-min={dateMin}&date-max={dateMax}&dist-max={distMax}";
+			"/cad.api?";
+			//+ "des={asteroid}&date-min={dateMin}&date-max={dateMax}&dist-max={distMax}";
 	
 	/** GET_NEO_LUNARS_RESPONSE_BY_FILTERED_DATE
 	 * 

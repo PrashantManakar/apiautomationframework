@@ -90,12 +90,12 @@ public class SBDBCloseApproachDataHelper {
 		 */
 		Response response = RestAssured
 				.given( ).log().all().
-				queryParam("asteroid", asteroid).
-				queryParam("dateMin", startDate).
-				queryParam("dateMax", endDate).
-				queryParam("distMax", distMax)
+			//	queryParam("des", asteroid).
+				queryParam("date-min", startDate).
+				queryParam("date-max", endDate).
+				queryParam("dist-max", distMax)
 				.contentType(ContentType.JSON)
-				.get(SBDBClosedApproachDataEndpoints.GET_ASTROID_RESPONSE_BY_FILTERED_DATE)
+				.get(SBDBClosedApproachDataEndpoints.GET_ALL_SBDB_CLOSED_APPROACH_RESPONSE)
 				.andReturn( );
 
 		/**

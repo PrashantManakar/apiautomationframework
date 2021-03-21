@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4787" started-at="2021-03-21T20:33:30 IST" finished-at="2021-03-21T20:33:35 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4787" started-at="2021-03-21T20:33:30 IST" finished-at="2021-03-21T20:33:35 IST">
+      <class name="com.sbdb.apiTest.SBDBClosedApproachDataTestSuite">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.sbdb.apiTest.SBDBClosedApproachDataTestSuite@4d9e68d0]" name="init" is-config="true" duration-ms="309" started-at="2021-03-21T20:33:30 IST" finished-at="2021-03-21T20:33:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyGetAllSBDBClosedApproachData()[pri:0, instance:com.sbdb.apiTest.SBDBClosedApproachDataTestSuite@4d9e68d0]" name="verifyGetAllSBDBClosedApproachData" duration-ms="2512" started-at="2021-03-21T20:33:30 IST" finished-at="2021-03-21T20:33:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAllSBDBClosedApproachData -->
+        <test-method status="PASS" signature="verifySBDBResponseDateFilteredWithinDateRange()[pri:0, instance:com.sbdb.apiTest.SBDBClosedApproachDataTestSuite@4d9e68d0]" name="verifySBDBResponseDateFilteredWithinDateRange" duration-ms="1938" started-at="2021-03-21T20:33:33 IST" finished-at="2021-03-21T20:33:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySBDBResponseDateFilteredWithinDateRange -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.sbdb.apiTest.SBDBClosedApproachDataTestSuite@4d9e68d0]" name="end" is-config="true" duration-ms="1" started-at="2021-03-21T20:33:35 IST" finished-at="2021-03-21T20:33:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.sbdb.apiTest.SBDBClosedApproachDataTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

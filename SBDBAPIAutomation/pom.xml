@@ -28,6 +28,8 @@
 		<jackson.databind>2.11.2</jackson.databind>
 		<joda.time>2.10</joda.time>
 		<gson>2.8.6</gson>
+		<maven.surefire.plugin>2.19.1</maven.surefire.plugin>
+		<reportng>1.1.4</reportng>
 	</properties>
 	
 	
@@ -91,6 +93,18 @@
 			<artifactId>joda-time</artifactId>
 			<version>${joda.time}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>${reportng}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -111,7 +125,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>${maven.compiler.plugin}</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -120,7 +134,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
+				<version>${maven.surefire.plugin}</version>
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>${testSuiteXMLFile}</suiteXmlFile>
